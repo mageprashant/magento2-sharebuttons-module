@@ -1,0 +1,24 @@
+<?php $currentUrl = $block->getUrl('*/*/*', ['_current' => true, '_use_rewrite' => true]);	 ?>
+<?php $productName = $block->getProductName(); ?>
+<div class="share-buttons">
+	<div class="social-message"><?php echo __('Share:')?></div>
+	<ul class="social">
+	<?php if ($block->getIsFacebookEnabled()):?>
+		<li><a href="https://www.facebook.com/sharer.php?u=<?php echo urlencode($block->escapeUrl($currentUrl)); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+	<?php endif ?>
+	<?php if ($block->getIsTwitterEnabled()):?>
+		<li><a href="https://twitter.com/share?text=<?php echo $block->escapeHtml($productName); ?>&url=<?php echo urlencode($block->escapeUrl($currentUrl)); ?>" target="_blank"><i class="fab fa-twitter"></i></a></li>
+	<?php endif ?>
+	<?php if ($block->getIsPinterestEnabled()):?>
+		<li><a href="http://pinterest.com/pin/create/button/?url=<?php echo urlencode($block->escapeUrl($currentUrl)); ?>&description=<?php echo $productName; ?>" target="_blank"><i class="fab fa-pinterest"></i></i></a></li>
+	<?php endif ?>
+	<?php if ($block->getIsGoogleEnabled()):?>
+		<li><a href="https://plus.google.com/share?url=<?php echo urlencode($block->escapeUrl($currentUrl)); ?>" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+	<?php endif ?>
+	<?php if ($block->getIsPrintEnabled()):?>
+		<li>
+			<a href="javascript:window.print()" target="_blank" title="<?php echo __('Share on Print')?>" class="share-link-print"><i class="fas fa-print"></i></a>
+		</li>
+	<?php endif ?>
+	</ul>
+</div>

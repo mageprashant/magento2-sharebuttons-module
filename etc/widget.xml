@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:helloworld:Magento_Widget:etc/widget.xsd">
+	<widget class="MagePrashant\ShareButtons\Block\Widget\ShareButtons" id="mageprashant_sharebuttons">
+		<label>Share Buttons</label>
+		<description>Share Buttons</description>
+		<parameters>
+			<parameter name="is_enabled" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Enabled</label>
+            </parameter>
+			<parameter name="is_facebook_enabled" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Is Facebook Enabled</label>
+            </parameter>
+			<parameter name="is_twitter_enabled" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Is Twitter Enabled</label>
+            </parameter>
+			<parameter name="is_google_enabled" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Is Google+ Enabled</label>
+            </parameter>
+			<parameter name="is_pinterest_enabled" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Is Pinterest Enabled</label>
+            </parameter>
+			<parameter name="is_print_enabled" xsi:type="select" visible="true" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Is Facebook Enabled</label>
+            </parameter>
+		</parameters>
+	</widget>
+</widgets>

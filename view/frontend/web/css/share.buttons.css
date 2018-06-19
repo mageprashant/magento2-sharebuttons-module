@@ -1,0 +1,18 @@
+.share-buttons .social-message {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 15px;
+	font-weight: bold;
+}
+.share-buttons .social {
+	padding-left: 0;
+	list-style: none;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+.share-buttons .social > li {
+	display: inline-block;
+	padding-right: 10px;
+	margin-bottom: 0;
+}

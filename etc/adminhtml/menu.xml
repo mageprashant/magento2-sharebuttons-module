@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+		<update id="MagePrashant_Core::core" title="MagePrashant Extensions" module="MagePrashant_ShareButtons" sortOrder="100" resource="MagePrashant_ShareButtons::menu"/>
+		<add id="MagePrashant_ShareButtons::sharebuttons" title="Share Buttons" module="MagePrashant_ShareButtons" sortOrder="90" parent="MagePrashant_Core::core" dependsOnModule="MagePrashant_ShareButtons" resource="MagePrashant_ShareButtons::sharebuttons"/>
+		<add id="MagePrashant_ShareButtons::settings" title="Settings" module="MagePrashant_ShareButtons" sortOrder="10" resource="MagePrashant_ShareButtons::config_checkdelivery" action="adminhtml/system_config/edit/section/sharebuttons" parent="MagePrashant_ShareButtons::sharebuttons"/>
+    </menu>
+</config>
